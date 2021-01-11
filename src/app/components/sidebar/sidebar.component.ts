@@ -1,14 +1,5 @@
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import {
-  AfterViewChecked,
-  Component,
-  ElementRef,
-  EventEmitter,
-  HostListener,
-  Input,
-  Output,
-  ViewChild
-} from '@angular/core';
+import {AfterViewChecked, Component, ElementRef, EventEmitter, HostListener, Input, Output, ViewChild} from '@angular/core';
 import {menu} from '../../config/page-menus';
 import pageSettings from '../../config/page-settings';
 

@@ -24,7 +24,7 @@ export class FloatSubMenuComponent {
   @Output() calculateFloatSubMenuPosition = new EventEmitter();
 
   expandCollapseSubmenu(currentMenu, allMenu, active) {
-    for (let menu of allMenu) {
+    for (const menu of allMenu) {
       if (menu != currentMenu) {
         menu.state = 'collapse';
       }

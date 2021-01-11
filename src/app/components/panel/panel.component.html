@@ -7,17 +7,17 @@
     <h4 *ngIf="this.title" class="panel-title">{{ title }}</h4>
     <ng-content select="[header]"></ng-content>
     <div *ngIf="!this.noButton" class="panel-heading-btn">
-      <a (click)="panelExpand()" title="Make Fullscreen" class="btn btn-xs btn-icon btn-circle btn-default"
-         href="javascript:;"><i
+      <a (click)="panelExpand()" class="btn btn-xs btn-icon btn-circle btn-default" href="javascript:"
+         title="Make Fullscreen"><i
         class="fa fa-expand"></i></a>
-      <a (click)="panelReload()" title="Reload this Panel" class="btn btn-xs btn-icon btn-circle btn-success"
-         href="javascript:;"><i
+      <a (click)="panelReload()" class="btn btn-xs btn-icon btn-circle btn-success" href="javascript:"
+         title="Reload this Panel"><i
         class="fa fa-redo"></i></a>
-      <a (click)="panelCollapse()" title="Minimize this Panel" class="btn btn-xs btn-icon btn-circle btn-warning"
-         href="javascript:;"><i
+      <a (click)="panelCollapse()" class="btn btn-xs btn-icon btn-circle btn-warning" href="javascript:"
+         title="Minimize this Panel"><i
         class="fa fa-minus"></i></a>
-      <a (click)="panelRemove()" title="Remove this panel" class="btn btn-xs btn-icon btn-circle btn-danger"
-         href="javascript:;"><i
+      <a (click)="panelRemove()" class="btn btn-xs btn-icon btn-circle btn-danger" href="javascript:"
+         title="Remove this panel"><i
         class="fa fa-times"></i></a>
     </div>
   </div>

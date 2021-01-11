@@ -35,7 +35,7 @@ export class ViewallComponent implements OnInit {
           if (params.value !== undefined) {
             return '<a  href="#" target="_blank">' + params.value + '</a>';
           } else {
-            return 'No Rows Found';
+            return 'Record Not Found';
             // <img src="assets/img/user/loading.gif">
           }
         },

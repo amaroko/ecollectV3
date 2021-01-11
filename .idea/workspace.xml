@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a42db6ab-317f-4646-9787-54e4e3be2692" name="Default Changelist" comment="new files" />
+    <list default="true" id="a42db6ab-317f-4646-9787-54e4e3be2692" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/pages/activitylog/activitylog.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/activitylog/activitylog/activityhome/activityhome.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/activitylog/activitylog/activityhome/activityhome.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/activitylog/activitylog/activityhome/activityhome.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/activitylog/activitylog/activityhome/activityhome.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/activitylog/activitylog/activitylog.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/activitylog/activitylog/activitylog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/activitylog/activitylog/activitylog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/activitylog/activitylog/activitylog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/float-sub-menu/float-sub-menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/float-sub-menu/float-sub-menu.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/panel/panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/panel/panel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/top-menu/top-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/top-menu/top-menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/work/allloans/allloans.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/work/allloans/allloans.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/work/viewall/viewall.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/work/viewall/viewall.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +40,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mRp3UHw6PvpPSGJHcgaGijTCYb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
@@ -30,7 +59,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.xslt" />
     <property name="ts.external.directory.path" value="C:\Users\CATE\Desktop\Ecollect-Project\template_angularjs8_startup\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -76,8 +106,18 @@
       <workItem from="1609467138081" duration="1552000" />
       <workItem from="1609788552001" duration="1787000" />
       <workItem from="1610057743760" duration="17000" />
-      <workItem from="1610057810915" duration="8049000" />
+      <workItem from="1610057810915" duration="9916000" />
+      <workItem from="1610206299477" duration="6475000" />
+      <workItem from="1610348224622" duration="2303000" />
     </task>
+    <task id="LOCAL-00001" summary="new files">
+      <created>1610068025131</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610068025131</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new files" />
     <option name="LAST_COMMIT_MESSAGE" value="new files" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -95,6 +136,14 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="423" y="230" key="#Scopes/0.0.1280.689@0.0.1280.689" timestamp="1610065824989" />
+    <state x="388" y="202" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1610367606904">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="388" y="202" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.689@0.0.1280.689" timestamp="1610367606904" />
+    <state x="248" y="0" key="CommitChangelistDialog2" timestamp="1610067232776">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="248" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1610067232776" />
     <state width="1225" height="151" key="GridCell.Tab.0.bottom" timestamp="1609468091719">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -111,13 +160,22 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1225" height="151" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1609468091719" />
-    <state x="139" y="0" key="SettingsEditor" timestamp="1610062683344">
+    <state x="139" y="0" key="SettingsEditor" timestamp="1610367638946">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="139" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1610062683344" />
+    <state x="139" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1610367638946" />
     <state x="334" y="111" width="591" height="520" key="find.popup" timestamp="1610059648045">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="334" y="111" width="591" height="520" key="find.popup/0.0.1280.689@0.0.1280.689" timestamp="1610059648045" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="template_angularjs8_startup" type="b2602c69:ProjectViewProjectNode" />
+        <item name="template_angularjs8_startup" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>
