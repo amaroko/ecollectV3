@@ -1,0 +1,69 @@
+<!-- begin profile -->
+<div class="profile">
+  <div class="profile-header">
+    <!-- BEGIN profile-header-cover -->
+    <div class="profile-header-cover"></div>
+    <!-- END profile-header-cover -->
+    <!-- BEGIN profile-header-content -->
+    <div class="profile-header-content">
+      <!-- BEGIN profile-header-img -->
+      <div class="profile-header-img">
+        <img src="/assets/img/user/user-13.jpg" alt="">
+      </div>
+      <!-- END profile-header-img -->
+      <!-- BEGIN profile-header-info -->
+      <div class="profile-header-info">
+        <h4 class="m-t-10 m-b-5">{{accountdetails?.client_name || accountdetails?.cardname || accountdetails?.clientname || accountdetails?.custname}}</h4>
+        <p class="m-b-10">{{accountdetails?.addressline1 || accountdetails?.address}}</p>
+        <p class="m-b-10">{{accountdetails?.cellnumber || accountdetails?.mobile || accountdetails?.phonenumber || accountdetails?.telnumber || accountdetails?.celnumber}}</p>
+        <a  #popover="ngbPopover" (click)="copyText(num())" ngbPopover="{{autodial_telnumber}} copied!!" class="btn btn-sm btn-secondary">{{autodial_telnumber}}</a>
+        <a  *ngIf="teles?.length== 0" aria-expanded="false" aria-haspopup="true"  class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" disabled
+            id="dropdownMenuButton" ngbPopover="No More Contacts to Show">
+          More contacts <span class="badge badge-info">{{totalTeles}}</span></a>
+        <a *ngIf="teles?.length!== 0" aria-expanded="false"
+           aria-haspopup="true" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown"
+           id="dropdownMenuButton1" title="Press here for more contacts" type="button">
+          More contacts <span class="badge badge-info">{{totalTeles}}</span></a>
+      </div>
+      <!-- END profile-header-info -->
+    </div>
+    <!-- END profile-header-content -->
+    <!-- BEGIN profile-header-tab -->
+    <ul class="profile-header-tab nav nav-tabs">
+      <li class="nav-item"><a href="javascript:" (click)="showTab('postTab')" [ngClass]="{ 'active': tabs.postTab }"
+                              class="nav-link">POSTS</a></li>
+      <li class="nav-item"><a href="javascript:" (click)="showTab('aboutTab')" [ngClass]="{ 'active': tabs.aboutTab }"
+                              class="nav-link">ABOUT</a></li>
+      <li class="nav-item"><a href="javascript:" (click)="showTab('photoTab')" [ngClass]="{ 'active': tabs.photoTab }"
+                              class="nav-link">PHOTOS</a></li>
+      <li class="nav-item"><a href="javascript:" (click)="showTab('videoTab')" [ngClass]="{ 'active': tabs.videoTab }"
+                              class="nav-link">VIDEOS</a></li>
+      <li class="nav-item"><a href="javascript:" (click)="showTab('friendTab')"
+                              [ngClass]="{ 'active': tabs.friendTab }" class="nav-link">FRIENDS</a></li>
+    </ul>
+    <!-- END profile-header-tab -->
+  </div>
+</div>
+<!-- end profile -->
+<div class="row">
+  <div class="hidden-xs col-sm-2">
+    <div class="fading-side-menu" data-offset-top="350" data-spy="affix" style="padding-left: 10px">
+      <h5>Menus</h5>
+      <button [queryParams]="{accnumber: accnumber, custnumber: custnumber, username: username, sys: sys}" [routerLinkActive]="['active']"
+              [routerLink]="['./activityhome']" queryParamsHandling="merge" class="btn btn-inverse btn btn-block"><i class="fa fa-list pull-right"></i>Client Home</button>
+      <button class="btn btn-inverse btn btn-block"><i class="fa fa-list pull-right"></i>Customer</button>
+      <button class="btn btn-inverse btn btn-block"><i class="fa fa-list pull-right"></i>Customer</button>
+      <button class="btn btn-inverse btn btn-block"><i class="fa fa-list pull-right"></i>Customer</button>
+      <button class="btn btn-inverse btn btn-block"><i class="fa fa-list pull-right"></i>Customer</button>
+      <button class="btn btn-inverse btn btn-block"><i class="fa fa-list pull-right"></i>Customer</button>
+      <button class="btn btn-inverse btn btn-block"><i class="fa fa-list pull-right"></i>Customer</button>
+      <button class="btn btn-inverse btn btn-block"><i class="fa fa-list pull-right"></i>Customer</button>
+    </div>
+  </div>
+  <div class="hidden-xs col-sm-10">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<!-- end profile-content -->
+

@@ -1,25 +1,25 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {ActivitylogComponent} from './activitylog/activitylog.component';
-import {ActivityhomeComponent} from './activitylog/activityhome/activityhome.component';
+import {ActivityhomeComponent} from './activityhome/activityhome.component';
 import {RouterModule, Routes} from '@angular/router';
 import {PanelModule} from '../../components/panel/panel.module';
+import { NotesComponent } from './notes/notes.component';
+import {CommonModule} from '@angular/common';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'notes'},
-  {path: 'activityhome', component: ActivityhomeComponent}
-];
+  {path: '', component: NotesComponent},
+  ];
 
 @NgModule({
-  declarations: [ActivitylogComponent, ActivityhomeComponent],
+  declarations: [ActivityhomeComponent, NotesComponent],
   imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
     PanelModule,
+    CommonModule,
+    RouterModule.forChild(routes)
   ],
   exports: [
     RouterModule
   ]
 })
 export class ActivitylogModule {
+
 }

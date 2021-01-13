@@ -1,6 +1,6 @@
 {
-  "name": "color-admin",
-  "version": "0.0.0",
+  "name": "ecollect",
+  "version": "3.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

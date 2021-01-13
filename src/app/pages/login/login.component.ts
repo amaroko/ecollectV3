@@ -105,9 +105,9 @@ export class LoginComponent implements OnInit {
           // this.router.navigate(['/home'], { skipLocationChange: true }).then(() => {
           //   // do whatever you need after navigation succeeds
           // });
-          // this.router.navigate(['/home']).then(() => {
-          //   // do whatever you need after navigation succeeds
-          // });
+          this.router.navigate(['/home']).then(() => {
+            // do whatever you need after navigation succeeds
+          });
         });
         //
       } else {

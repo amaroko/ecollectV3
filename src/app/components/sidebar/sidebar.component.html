@@ -31,7 +31,7 @@
     <!-- begin sidebar nav -->
     <ul class="nav">
       <li *ngIf="pageSettings.pageSidebarSearch" class="nav-search">
-        <input (keyup)="sidebarSearch($event)" class="form-control" placeholder="Sidebar menu filter..." type="text"/>
+        <input (keyup)="sidebarSearch($event)" class="form-control" placeholder="Search Menu here..." type="text"/>
       </li>
       <li class="nav-header">Navigation</li>
 
@@ -122,8 +122,8 @@
       </li>
 
       <!-- begin sidebar minify button -->
-      <li><a (click)="toggleMinified()" class="sidebar-minify-btn" href="javascript:"><i
-        class="fa fa-angle-double-left"></i></a></li>
+<!--      <li><a (click)="toggleMinified()" class="sidebar-minify-btn" href="javascript:"><i-->
+<!--        class="fa fa-angle-double-left"></i></a></li>-->
       <!-- end sidebar minify button -->
     </ul>
     <!-- end sidebar nav -->

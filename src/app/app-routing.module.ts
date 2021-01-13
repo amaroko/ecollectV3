@@ -4,8 +4,10 @@ import {CommonModule} from '@angular/common';
 // Home
 import {LoginComponent} from './pages/login/login.component';
 import {LayoutComponent} from './pages/layout/layout.component';
-import {ActivitylogComponent} from './pages/activitylog/activitylog/activitylog.component';
+import {ActivitylogComponent} from './pages/activitylog/activitylog.component';
 import {AuthGuard} from './auth.guard';
+import {NotesComponent} from './pages/activitylog/notes/notes.component';
+import {ActivitylogModule} from './pages/activitylog/activitylog.module';
 
 export const routes: Routes = [
   // {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -25,7 +27,7 @@ export const routes: Routes = [
           {path: 'reminders', loadChildren: './pages/reminders/reminders.module#RemindersModule', data: {title: 'Reminders'}},
           {path: 'mcoopcash', loadChildren: './pages/mcoopcash/mcoopcash.module#McoopcashModule', data: {title: 'Mcoopcash'}},
           {path: 'creditcards', loadChildren: './pages/creditcards/creditcards.module#CreditcardsModule', data: {title: 'Creditcards'}},
-          {path: 'watch', loadChildren: './pages/watch/watch.module#WatchModule', data: {title: 'Watch'}},
+          {path: 'watch', loadChildren: './pages/watch/watch.module#WatchModule', data: {title: 'Watch'}}
         ]
       }
     ]
@@ -33,35 +35,25 @@ export const routes: Routes = [
   {
     path: 'activitylog',
     component: ActivitylogComponent,
+    canActivate: [AuthGuard],
     children: [
-      {path: '', redirectTo: 'notes', pathMatch: 'full'},
-      // {path: 'activityhome', component: ActivityhomeComponent},
-      {path: 'activitylog', loadChildren: './pages/activitylog/activitylog.module#ActivitylogModule', data: {title: 'Activitylog'}},
-      // {path: 'activityaction', component: ActivityActionComponent},
-      // {path: 'notes', component: NotesComponent},
-      // {path: 'files', component: FilesComponent},
-      // {path: 'sms', component: SmsComponent},
-      // {path: 'accplan', component: AccPlanComponent},
-      // {path: 'contacts', component: CustContactsComponent},
-      // {path: 'demandletters', component: DemandLettersComponent},
-      // {path: 'remedialcollaterals', component: CollateralsComponent},
-      // {path: 'bulknotes', component: BulknotesComponent},
-      // {path: 'guarantors', component: GuarantorsComponent},
-      // {path: 'editnote', component: EditnoteComponent},
-      // {path: 'ptps', component: PtpsComponent},
-      // {path: 'writeoffstory', component: WriteoffstoryComponent},
-      // { path: 'products', component: ProductsComponent },
-      {path: '**', redirectTo: 'notes'}
-    ],
-    canActivate: [AuthGuard]
-
+      {
+        path: '',
+        children: [
+          {path: '', redirectTo: 'notes', pathMatch: 'full'},
+          {path: 'notes', component: NotesComponent, data: {title: 'Activitylog | Notes'}},
+          // {path: '**', redirectTo: 'notes'}
+        ]
+      }
+    ]
   },
   {path: 'login', component: LoginComponent, data: {title: 'login'}},
   {path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forRoot(routes)],
+  imports: [CommonModule, RouterModule.forRoot(routes),
+  ActivitylogModule],
   declarations: [],
   exports: [RouterModule]
 })

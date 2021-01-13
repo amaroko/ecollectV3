@@ -43,7 +43,7 @@ import '@ag-grid-enterprise/all-modules';
 import {AgGridModule} from '@ag-grid-community/angular';
 import {filter, map} from 'rxjs/operators';
 import {NgxSkeletonLoaderModule} from 'ngx-skeleton-loader';
-import {ActivitylogComponent} from './pages/activitylog/activitylog/activitylog.component';
+import {ActivitylogComponent} from './pages/activitylog/activitylog.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -65,8 +65,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     LoginComponent,
 
     LayoutComponent,
-
     ActivitylogComponent
+
+
 
 
   ],
