@@ -38,7 +38,7 @@ export const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       {
-        path: '',
+        path: 'activitylog',
         children: [
           {path: '', redirectTo: 'notes', pathMatch: 'full'},
           {path: 'notes', component: NotesComponent, data: {title: 'Activitylog | Notes'}},

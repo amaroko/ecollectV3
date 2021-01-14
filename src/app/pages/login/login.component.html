@@ -1,72 +1,65 @@
-<div class="signupform">
-  <div class="container">
-    <!-- main content -->
-    <!---728x90--->
 
-    <div class="agile_info">
-      <div class="w3l_form">
-        <div class="left_grid_info">
-          <h1>E-Collect&trade;</h1>
-          <p>Loan management, business-debt management, consumer-debt management, credit card and reporting</p>
-          <img alt="" src="../../assets/img/cooop.jpeg"/>
-        </div>
+
+
+<!-- begin login -->
+<div class="login login-with-news-feed">
+  <!-- begin news-feed -->
+  <div class="news-feed">
+    <div class="news-image" style="background-image: url(../assets/img/login-bg/login-bg-11.jpg)"></div>
+    <div class="news-caption">
+      <h4 class="caption-title"><b>Ecollect</b> </h4>
+      <p>
+        Loan management, business-debt management, consumer-debt management, credit card and reporting
+      </p>
+    </div>
+  </div>
+  <!-- end news-feed -->
+  <!-- begin right-content -->
+  <div class="right-content">
+    <!-- begin login-header -->
+    <div class="login-header">
+      <div class="brand">
+        <span class="logo"></span> <b>Ecollect</b>
+        <small>Use your credentials to login</small>
       </div>
-
-      <div class="w3_info">
-        <!---728x90--->
-
-        <h2></h2>
-        <p>Enter your details to login.</p>
-        <form (submit)="submitForm($event, valForm.value)" [formGroup]="valForm" name="loginForm" novalidate=""
-              role="form">
-          <label>Username</label>
-          <div class="input-group">
-            <span aria-hidden="true" class="fa fa-envelope"></span>
-            <label for="username"></label><input autocomplete="off" formControlName="username" id="username"
-                                                 name="username"
-                                                 placeholder="Enter Your Username" required="" type="text"
-                                                 type="text">
-          </div>
-          <div
-            *ngIf="valForm.controls['username'].hasError('required') && (valForm.controls['username'].dirty || valForm.controls['username'].touched)"
-            class="text-danger">
-            Username is required
-          </div>
-          <label>Password</label>
-          <div class="input-group">
-            <span aria-hidden="true" class="fa fa-lock"></span>
-            <label for="password"></label><input autocomplete="off" formControlName="password" id="password"
-                                                 placeholder="Enter Password" required="" type="Password">
-          </div>
-          <div
-            *ngIf="valForm.controls['password'].hasError('required') && (valForm.controls['password'].dirty || valForm.controls['password'].touched)"
-            class="text-danger">
-            Password is required
-          </div>
-          <button [disabled]="!valForm.valid" class="btn btn-block btn-primary mt-3" type="submit">Login</button>
-          <!--<div class="form-group text-center">
-              <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
-          </div><br>-->
-          <br/><br/><br/>
-          <ngx-skeleton-loader
-            *ngIf="loading"
-            [theme]="{ width: '80px', height: '80px' }"
-            appearance="circle"
-          >
-          </ngx-skeleton-loader>
-          <div *ngIf="loading" class="loader"></div>
-          <div *ngIf="error" class="alert alert-danger text-center">{{error}}</div>
-        </form>
+      <div class="icon">
+        <i class="fa fa-sign-in-alt"></i>
       </div>
     </div>
-    <!-- //main content -->
-  </div>
-  <!---728x90--->
+    <!-- end login-header -->
+    <!-- begin login-content -->
+    <div class="login-content">
+      <form (submit)="submitForm($event, valForm.value)" [formGroup]="valForm" name="loginForm" class="margin-bottom-0">
+        <div class="form-group m-b-15">
+          <input type="text" formControlName="username" id="username"
+                 name="username"
+                 placeholder="Enter Your Username"  class="form-control form-control-lg"  required/>
+        </div>
+        <div
+          *ngIf="valForm.controls['username'].hasError('required') && (valForm.controls['username'].dirty || valForm.controls['username'].touched)"
+          class="text-danger">
+          Username is required
+        </div>
+        <div class="form-group m-b-15">
+          <input formControlName="password" id="password"
+                 type="password" class="form-control form-control-lg" placeholder="Password" required/>
+        </div>
+        <div *ngIf="valForm.controls['password'].hasError('required') && (valForm.controls['password'].dirty || valForm.controls['password'].touched)"
+             class="text-danger">
+          Password is required
+        </div>
+        <div class="login-buttons">
+          <button [disabled]="!valForm.valid" type="submit" class="btn btn-success btn-block btn-lg">Sign me in</button>
+        </div>
 
-  <!-- footer -->
-  <div class="footer">
-    <p>&copy; 2019 E-Collect&reg;. All Rights Reserved | Design by <a href="#" target="blank">Inteligen Infosys Ltd</a>
-    </p>
+        <hr/>
+        <p class="text-center text-grey-darker mb-0">
+          &copy; Inteligen Infosys All Right Reserved 2021
+        </p>
+      </form>
+    </div>
+    <!-- end login-content -->
   </div>
-  <!-- footer -->
+  <!-- end right-container -->
 </div>
+<!-- end login -->
